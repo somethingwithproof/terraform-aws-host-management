@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   validate:
-    runs-on: [self-hosted]
+    runs-on: [self-hosted, linux, x64]
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4
       - uses: opentofu/setup-opentofu@b1a4633db1eb1b90ca6399e707c171382122f944 # v1
